@@ -144,7 +144,11 @@ def example_script():
     # Example use case
     x_train, y_train, x_test, y_test = get_xy()
     save_model(ml_lgbm(x_train, y_train, x_test, y_test)[0])
-    apply_model("model.sav", "unknownfile.exe")
+    
+    model_dir = "D:/ember-master/ember-master/model.sav"
+    file_dir = "D:/Downloads/unknownfile.exe"
+    
+    apply_model(model_dir, file_dir)
 
 
 example_script()

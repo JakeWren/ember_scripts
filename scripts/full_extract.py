@@ -12,11 +12,13 @@ def extract_data(directory, label):
         # Replacing apostrophes with speech marks to avoid formatting errors
         features = features.replace("'", '"')
         # Write data to file
-        with open('D:/ember-master/ember-master/ember2018/data.jsonl', 'a') as outfile:
+        data_dir = 'D:/ember-master/ember-master/ember2018/data.jsonl'
+        with open(data_dir, 'a') as outfile:
             outfile.write(str(features) + '\n')
         outfile.close()
 
-
-extract_data('D:/ember-master/ember-master/mal_files', 1)
-extract_data('D:/ember-master/ember-master/beni_files', 0)
+malware_dir = 'D:/ember-master/ember-master/mal_files'
+benign_dir = 'D:/ember-master/ember-master/beni_files'
+extract_data(malware_dir, 1)
+extract_data(benign_dir, 0)
 
