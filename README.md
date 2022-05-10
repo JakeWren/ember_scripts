@@ -1,3 +1,19 @@
+# Updated EMBER scripts
+To enable further research by allowing security researches to automate feature extraction as well as model training.
+
+Additional script include:
+## full_extract.py 
+Extract data from portable executable files within a directory. 
+
+## train_models.py
+1) Apply the data to popular binary classification models and output results.
+2) Save and apply the trained model against samples.
+
+## requirements.txt
+Updated to enable the additional scripts.
+
+---
+
 <img src="resources/logo.png" align="right" width="250px" height="250px">
 
 # Elastic Malware Benchmark for Empowering Researchers
