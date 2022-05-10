@@ -1,3 +1,10 @@
+'''
+Author: Jacob Wren
+Date: 10/05/2022
+Description: Extract data from portable executable files within a directory.
+'''
+
+
 def extract_data(directory, label):
     import os
     from ember import features
