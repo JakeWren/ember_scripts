@@ -94,7 +94,7 @@ def ml_rf(x_train, y_train, x_test, y_test):
     from sklearn.ensemble import RandomForestClassifier
 
     # Training model
-    rf = RandomForestClassifier(n_estimators=30, max_depth=11)
+    rf = RandomForestClassifier()
     rf.fit(x_train, y_train)
     predicted = rf.predict(x_test)
 
