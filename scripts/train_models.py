@@ -1,3 +1,12 @@
+'''
+Author: Jacob Wren
+Date: 10/05/2022
+Description:
+    1)  Apply the data to popular binary classification models and output results
+    2)  Save and apply the trained model against samples.
+'''
+
+
 import ember
 from sklearn import metrics
 import joblib
