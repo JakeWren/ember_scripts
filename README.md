@@ -73,7 +73,7 @@ python setup.py install
 The `train_ember.py` script simplifies the model training process. It will vectorize the ember features if necessary and then train the LightGBM model.
 
 ```
-python train_ember.py [/path/to/dataset]
+python init_ember.py [/path/to/dataset]
 ```
 
 The `classify_binaries.py` script will return model predictions on PE files.
